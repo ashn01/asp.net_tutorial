@@ -1,0 +1,14 @@
+﻿@model StudentTeacherViewModel
+
+@{ 
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Hello</h1>
+        <p>ASP.NET Core</p>
+    </div>
+</div>
+
+@await Html.PartialAsync("_TeacherTable", Model);
