@@ -11,7 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using MyApp.Data;
-
+using MyApp.Data.Repositories;
+using Microsoft.AspNetCore.Identity;
+using MyApp.Models;
 
 namespace MyApp
 {
@@ -31,7 +33,15 @@ namespace MyApp
                 options.UseSqlServer(_config.GetConnectionString("MyAppConnection"));
             });
 
-            services.AddTransient<DbSeeder>(); // once added
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 6; // password length
+            }).AddEntityFrameworkStores<MyAppContext>();
+
+            services.AddTransient<DbSeeder>(); // once added, not remaining in cache
+            services.AddScoped<ITeacherRepository, TeacherRepository>(); // service life cycle. create instance when http request. abandon instance when request finished.
+            services.AddScoped<IStudentRepository, StudentRepository>(); // register services
+            // services.AddSingleton(); // create once and use again
             services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
@@ -46,11 +56,14 @@ namespace MyApp
             //app.UseRouting();
 
             app.UseStaticFiles(); // middle ware to use static files
+
+            app.UseAuthentication();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}"); // default page
+                    template: "{controller=Account}/{action=Login}/{id?}"); // default page
             });
 
             seeder.SeedDatabase().Wait(); // seeding

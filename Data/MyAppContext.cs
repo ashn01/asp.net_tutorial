@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using MyApp.Models;
 using System;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MyApp.Data
 {
-    public class MyAppContext : DbContext
+    public class MyAppContext : IdentityDbContext<ApplicationUser>
     {
         public MyAppContext(DbContextOptions options) : base(options) {}
 

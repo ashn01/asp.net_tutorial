@@ -35,4 +35,25 @@
 
 <hr />
 
-@await Html.PartialAsync("_TeacherTable", Model);
+<h3>Students list</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var student in Model.Students)
+        {
+        <tr>
+            <td>@student.Name</td>
+            <td>@student.Age</td>
+            <td><a asp-controller="Home" asp-action="Detail" asp-route-id="@student.Id">Detail</a></td>
+            <td><a asp-controller="Home" asp-action="Edit" asp-route-id="@student.Id">Edit</a></td>
+            <td><a asp-controller="Home" asp-action="Delete" asp-route-id="@student.Id">Delete</a></td>
+        </tr>
+        }
+    </tbody>
+</table>

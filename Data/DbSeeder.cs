@@ -1,4 +1,5 @@
-﻿using MyApp.Models;
+﻿using Microsoft.AspNetCore.Identity;
+using MyApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,13 @@ namespace MyApp.Data
     public class DbSeeder
     {
         private MyAppContext _context;
-        public DbSeeder(MyAppContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public DbSeeder(MyAppContext context, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             _context = context;
+            _roleManager = roleManager;
+            _userManager = userManager;
         }
 
         public async Task SeedDatabase()
@@ -30,6 +35,11 @@ namespace MyApp.Data
                 //await _context.AddAsync(new Teacher() { Name = "Alex", Class = "English" }); // add a data to table
                 await _context.SaveChangesAsync();
             }
+
+            var adminAccount = await _userManager.FindByNameAsync("admin@test.com"); // assign admin role
+            var adminRole = new IdentityRole("Admin");
+            await _roleManager.CreateAsync(adminRole);
+            await _userManager.AddToRoleAsync(adminAccount, adminRole.Name);
         }
     }
 }

@@ -63,7 +63,6 @@ C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\runtimes\win\lib
 C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\ashn0\source\repos\MyApp\MyApp\obj\Debug\netcoreapp3.1\MyApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -74,3 +73,13 @@ C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\runtimes\win\lib
 C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ashn0\source\repos\MyApp\MyApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Detail.cshtml.g.cs
+C:\Users\ashn0\source\repos\MyApp\MyApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
+C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ashn0\source\repos\MyApp\MyApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ashn0\source\repos\MyApp\MyApp\obj\Debug\netcoreapp3.1\MyApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ashn0\source\repos\MyApp\MyApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\ashn0\source\repos\MyApp\MyApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

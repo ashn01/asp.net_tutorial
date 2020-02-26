@@ -19,8 +19,15 @@ using MyApp.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\ashn0\source\repos\MyApp\MyApp\Views\_ViewImports.cshtml"
+using MyApp.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0d3aa07339449e9ee902e8768c6cbf48c86c6c3e", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"faa5e438f3b048ed145864eca4d3906bac0b485e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ba425ef2d5b85c5938d7979b74ed13c709f3fe7c", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<StudentTeacherViewModel>
     {
         #pragma warning disable 1998
